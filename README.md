@@ -13,7 +13,7 @@ $ splunk restart
 
 ### Via the Splunk GUI 
 
-Download the ZIP directory of this repository and upload to your Splunk instance via Apps->Manage Apps->Install App from File.
+Download the [ZIP directory of this repository](https://github.com/st4ple/splunk-twitter-add-on/archive/master.zip) and upload it to your Splunk instance via `Apps->Manage Apps->Install App from File`.
 
 
 ## Configuration 
@@ -22,7 +22,7 @@ Prerequisites: Consumer API key & secret for an App from the [Twitter Developer 
 
 ### Via the Splunk GUI 
 
-Navigate to Settings->Data inputs->Local Inputs->Twitter->New and fill out the required parameters.
+Navigate to `Settings->Data inputs->Local Inputs->Twitter->New and fill out the required parameters.
 
 ### Via .conf files 
 
