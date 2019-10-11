@@ -40,7 +40,7 @@ sourcetype = _json
 ```
 
 
-### Example event:
+## Example event:
 ```json
 {
   "_time": "2019-10-09T18:00:01+00:00", 
