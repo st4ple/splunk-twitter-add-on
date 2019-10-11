@@ -11,7 +11,7 @@ $ git clone https://github.com/st4ple/splunk-twitter-add-on.git
 $ splunk restart
 ````
 
-### Via the Splunk GUI 
+#### Via Splunk UI:
 
 Download the [ZIP directory of this repository](https://github.com/st4ple/splunk-twitter-add-on/archive/master.zip) and upload it to your Splunk instance via `Apps->Manage Apps->Install App from File`.
 
@@ -20,11 +20,11 @@ Download the [ZIP directory of this repository](https://github.com/st4ple/splunk
 
 Prerequisites: Consumer API key & secret for an App from the [Twitter Developer Portal](https://developer.twitter.com/en/apps).
 
-### Via the Splunk GUI 
+#### Via Splunk UI:
 
-Navigate to `Settings->Data inputs->Local Inputs->Twitter->New and fill out the required parameters.
+Navigate to `Settings->Data inputs->Local Inputs->Twitter->New` and fill out the required parameters.
 
-### Via .conf files 
+#### Via .conf files:
 
 Add a stanza like this to an inputs.conf file (replace parts in <> brackets):
 
@@ -40,7 +40,7 @@ sourcetype = _json
 ```
 
 
-Example event:
+### Example event:
 ```json
 {
   "_time": "2019-10-09T18:00:01+00:00", 
