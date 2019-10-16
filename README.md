@@ -1,9 +1,9 @@
-# :speech_balloon::electric_plug: Twitter Add-on for Splunk
+# :speech_balloon::electric_plug: Twitter TA for Splunk
 
-> **WARNING**: This Splunk TA is still under construction. Future updates might break existing setups so proceed with care! 
+> **WARNING**: This TA is still under construction. Future updates might break existing setups so proceed with care! 
 
 ## Installation
-### Via GIT:
+#### via GIT:
 Clone this repository to $SPLUNK_HOME/etc/apps/ on an Indexer or Heavy Forwarder and restart Splunk.
 
 ````
@@ -11,20 +11,22 @@ $ git clone https://github.com/st4ple/splunk-twitter-add-on.git
 $ splunk restart
 ````
 
-#### Via Splunk UI:
+#### via Splunk UI:
 
-Download the [ZIP directory of this repository](https://github.com/st4ple/splunk-twitter-add-on/archive/master.zip) and upload it to your Splunk instance via `Apps->Manage Apps->Install App from File`.
+Download the [.zip of this repository](https://github.com/st4ple/splunk-twitter-add-on/archive/master.zip) and upload it to your Splunk instance via 
+
+`Apps -> Manage Apps -> Install App from File`.
 
 
 ## Configuration 
 
 Prerequisites: Consumer API key & secret for an App from the [Twitter Developer Portal](https://developer.twitter.com/en/apps).
 
-#### Via Splunk UI:
+#### via Splunk UI:
 
 Navigate to `Settings->Data inputs->Local Inputs->Twitter->New` and fill out the required parameters.
 
-#### Via .conf files:
+#### via .conf files:
 
 Add a stanza like this to an inputs.conf file (replace parts in <> brackets):
 
@@ -35,7 +37,7 @@ API_SECRET = <twitter_api_secret>
 host = Twitter
 index = <index>
 interval = 300 
-query = <your query or hashtag>
+query = <your query or hashtag to search for on the Twitter API>
 sourcetype = _json
 ```
 
