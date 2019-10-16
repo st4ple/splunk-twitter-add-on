@@ -24,7 +24,11 @@ Prerequisites: Consumer API key & secret for an App from the [Twitter Developer 
 
 #### via Splunk UI:
 
-Navigate to `Settings->Data inputs->Local Inputs->Twitter->New` and fill out the required parameters.
+Navigate to 
+
+`Settings -> Data inputs -> Local Inputs -> Twitter -> New` 
+
+and fill out the required parameters.
 
 #### via .conf files:
 
